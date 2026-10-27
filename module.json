@@ -59,6 +59,8 @@
       }
     ]
   },
-  "persistentStorage": true,
-  "readme": "README.md"
+  "url": "https://github.com/Miracl-Fly/BG3-Inspired-HUD---PF1e",
+  "manifest": "https://github.com/Miracl-Fly/BG3-Inspired-HUD---PF1e/releases/download/v0.8.15/module.json",
+  "download": "https://github.com/Miracl-Fly/BG3-Inspired-HUD---PF1e/releases/download/v0.8.15/bg3-hud-pf1.zip",
+  "persistentStorage": true
 }
