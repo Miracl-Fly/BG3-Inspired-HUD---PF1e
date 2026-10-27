@@ -1,0 +1,134 @@
+/* PF1 富文本提示框（内容由 utils/tooltipRenderer.js 生成，外层容器归 core） */
+
+.pf1-tooltip {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 200px;
+    max-width: 320px;
+    padding: 8px 10px;
+    color: #eaeaea;
+    font-size: 12px;
+    line-height: 1.35;
+}
+
+.pf1-tip-head {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.pf1-tip-img {
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 4px;
+    object-fit: cover;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.pf1-tip-title {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.pf1-tip-name {
+    font-weight: 700;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pf1-tip-type {
+    font-size: 11px;
+    opacity: 0.75;
+}
+
+.pf1-tip-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 4px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.pf1-tip-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.pf1-tip-label {
+    opacity: 0.7;
+    white-space: nowrap;
+}
+
+.pf1-tip-value {
+    text-align: right;
+    font-weight: 600;
+    word-break: break-word;
+}
+
+.pf1-tip-desc {
+    opacity: 0.85;
+    font-size: 11px;
+    max-height: 5.4em;
+    overflow: hidden;
+}
+/* 施法者等级：标题行最右侧（对齐图标右侧那片空白，不挤名字） */
+.pf1-tip-cl {
+    margin-left: auto;
+    align-self: flex-start;
+    flex: 0 0 auto;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: #f3e9d2;
+    background: rgba(18, 14, 10, 0.85);
+    border: 1px solid rgba(214, 186, 132, 0.5);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+    white-space: nowrap;
+}
+
+/* 徽章组：CL / 环数 / DC 并排贴右上，不换行、不挤名字 */
+.pf1-tip-badges {
+    margin-left: auto;
+    align-self: flex-start;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    max-width: 62%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.pf1-tip-badges .pf1-tip-cl {
+    margin-left: 0;
+}
+
+/* 环数 / 豁免 DC：和 CL 一样大，DC 换成暖色描边 */
+.pf1-tip-chip {
+    flex: 0 0 auto;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: #f3e9d2;
+    background: rgba(18, 14, 10, 0.85);
+    border: 1px solid rgba(150, 170, 200, 0.5);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+    white-space: nowrap;
+}
+
+.pf1-tip-chip.pf1-tip-dc {
+    color: #ffe9b0;
+    border-color: rgba(226, 190, 110, 0.75);
+    background: rgba(30, 20, 8, 0.9);
+}

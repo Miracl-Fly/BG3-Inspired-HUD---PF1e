@@ -1,0 +1,7 @@
+{
+  "name": "bg3-hud-pf1",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Pathfinder 1e adapter for BG3 Inspired HUD (local port)"
+}

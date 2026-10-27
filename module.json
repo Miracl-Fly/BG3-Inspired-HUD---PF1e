@@ -1,0 +1,64 @@
+{
+  "id": "bg3-hud-pf1",
+  "title": "BG3 Inspired HUD - PF1e",
+  "description": "Pathfinder 1e 系统适配：把 BG3 风格的战斗 HUD（肖像、血条、热键栏、法术位、休整）接到 PF1 上。需要同时启用 bg3-hud-core。",
+  "version": "0.8.15",
+  "library": false,
+  "authors": [
+    {
+      "name": "Local port (based on BragginRites' adapter contract)",
+      "flags": {}
+    }
+  ],
+  "license": "MIT",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "esmodules": [
+    "scripts/module.js"
+  ],
+  "styles": [
+    "styles/index.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "cn",
+      "name": "中文（简体）",
+      "path": "lang/cn.json"
+    },
+    {
+      "lang": "zh",
+      "name": "中文（简体）",
+      "path": "lang/zh.json"
+    }
+  ],
+  "relationships": {
+    "requires": [
+      {
+        "id": "bg3-hud-core",
+        "type": "module",
+        "compatibility": {
+          "minimum": "0.8.0"
+        }
+      }
+    ],
+    "systems": [
+      {
+        "id": "pf1",
+        "type": "system",
+        "compatibility": {
+          "minimum": "10",
+          "verified": "11.11"
+        }
+      }
+    ]
+  },
+  "persistentStorage": true,
+  "readme": "README.md"
+}

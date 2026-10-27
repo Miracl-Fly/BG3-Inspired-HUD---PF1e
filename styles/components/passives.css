@@ -1,0 +1,7 @@
+/* 被动特性条（肖像上方那排小图标）
+   关掉「显示被动特性条」时整条隐藏——core 的容器是绝对定位在热键栏上方的，
+   仅靠清空子元素还会留下 ::before 齿轮热区，所以这里直接 display:none。 */
+
+#bg3-hotbar-container .bg3-passives-container.pf1-passives-hidden {
+    display: none !important;
+}

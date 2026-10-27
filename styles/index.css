@@ -1,0 +1,7 @@
+/* bg3-hud-pf1 —— 只补 core 没有的部分（血条、信息面板内容、物品提示框）。
+   其它外观（格子、武器组、过滤器按钮）全部沿用 bg3-hud-core 的样式。 */
+
+@import url('./components/portrait.css');
+@import url('./components/info.css');
+@import url('./components/tooltip.css');
+@import url('./components/passives.css');

@@ -1,0 +1,130 @@
+/* PF1 信息面板（d20 按钮弹出的滑板） */
+
+.pf1-info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 320px;
+    padding: 8px;
+    color: #e8e8e8;
+    font-size: 12px;
+}
+
+.pf1-info-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.pf1-info-name {
+    font-weight: 700;
+    font-size: 13px;
+    margin-right: 2px;
+}
+
+.pf1-info-pill {
+    padding: 1px 6px;
+    border-radius: 9px;
+    background: rgba(255, 255, 255, 0.09);
+    white-space: nowrap;
+}
+
+.pf1-info-pill i {
+    opacity: 0.8;
+    margin-right: 2px;
+}
+
+.pf1-info-row {
+    display: grid;
+    gap: 4px;
+}
+
+.pf1-info-row.abilities {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.pf1-info-row.saves {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.pf1-info-row.skills {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.pf1-info-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+    padding: 3px 2px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.28);
+    color: inherit;
+    cursor: pointer;
+    line-height: 1.15;
+}
+
+.pf1-info-cell:hover {
+    background: rgba(255, 255, 255, 0.14);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.pf1-info-cell .label {
+    font-size: 10px;
+    text-transform: uppercase;
+    opacity: 0.75;
+}
+
+.pf1-info-cell .value {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.pf1-info-spells {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding-top: 6px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.pf1-spellbook {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
+}
+
+.pf1-spellbook .book {
+    opacity: 0.8;
+    margin-right: 2px;
+}
+
+.pf1-slot {
+    padding: 1px 5px;
+    border-radius: 4px;
+    background: rgba(80, 140, 220, 0.28);
+    white-space: nowrap;
+}
+
+.pf1-slot b {
+    font-weight: 700;
+    opacity: 0.85;
+    margin-right: 2px;
+}
+
+.pf1-slot.empty {
+    background: rgba(160, 60, 60, 0.3);
+    opacity: 0.7;
+}
+
+/* 瘀伤（非致命伤害）：紫底提示，够多时会晕眩 */
+.pf1-info-pill.pf1-info-nonlethal {
+    background: rgba(155, 89, 182, 0.28);
+    border-color: rgba(155, 89, 182, 0.6);
+    color: #d6a8ee;
+}

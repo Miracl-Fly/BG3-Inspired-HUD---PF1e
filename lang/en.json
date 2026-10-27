@@ -1,0 +1,109 @@
+{
+    "bg3-hud-pf1": {
+        "AutoPopulate": {
+            "SettingsTitle": "Auto-populate grid configuration",
+            "Types": {
+                "Consumables": "Consumables",
+                "Loot": "Loot",
+                "OtherAbilities": "Other abilities",
+                "Cantrips": "Cantrips (level 0)",
+                "Traits": "Traits",
+                "ClassFeatures": "Class features",
+                "Feats": "Feats",
+                "SpellRing": "level",
+                "Equipment": "Equipment",
+                "Spells": "Spells (all levels)",
+                "Templates": "Templates",
+                "Buffs": "Buffs",
+                "Attacks": "Attacks",
+                "RacialTraits": "Racial traits",
+                "Weapons": "Weapons"
+            },
+            "DialogHint": "Pick the item types to fill this grid with.",
+            "DialogTitle": "Auto-populate this grid",
+            "Groups": {
+                "Combat": "Combat",
+                "Magic": "Magic",
+                "Features": "Character features",
+                "Items": "Items"
+            },
+            "Options": {
+                "SkipUnusableHint": "Description-only items without uses or actions are left off the hotbar.",
+                "SkipUnusable": "Skip unusable items"
+            },
+            "SettingsHint": "Each block is one hotbar grid. Light up the type buttons to assign them to that grid — a type can only live in one grid.",
+            "NoTypes": "No item types available to populate"
+        },
+        "CellMenu": {
+            "Unequip": "Unequip",
+            "Damage": "Roll damage",
+            "Prepare": "Prepare spell",
+            "Use": "Use",
+            "Equip": "Equip",
+            "Unprepare": "Unprepare spell",
+            "Attack": "Roll attack",
+            "Cast": "Cast"
+        },
+        "Notifications": {
+            "NotReady": "HUD is not ready yet — enter a world and select a token first",
+            "Saved": "Auto-populate configuration saved",
+            "SaveFailed": "Failed to open the auto-populate configuration, see the console",
+            "PassivesConfig": "Passive traits bar: {state} · {mode} (change it in Configure Settings → Module Settings → BG3 HUD PF1)"
+        },
+        "Filters": {
+            "Feat": "Feats",
+            "Spell": "Spells",
+            "Cantrip": "Cantrips",
+            "Equipment": "Equipment",
+            "Trait": "Traits",
+            "RacialTrait": "Racial traits",
+            "Consumable": "Consumables",
+            "Ring": "level",
+            "ClassFeature": "Class features",
+            "Weapon": "Weapons",
+            "Buff": "Buffs"
+        },
+        "Rest": {
+            "Hint": "Take a rest (restores HP, spell slots and daily abilities)",
+            "OpenSheet": "Character sheet",
+            "OpenSheetHint": "Open the PF1 character sheet",
+            "Label": "Rest"
+        },
+        "Settings": {
+            "AutoPopulatePCsHint": "Off by default so players keep their own layout.",
+            "ShowItemNames": "Show item names",
+            "ShowHealthOverlayHint": "Colour-coded health bar at the bottom of the portrait. Click it to change HP.",
+            "IgnoreGroupActors": "Ignore group actors",
+            "ShowItemNamesHint": "Draw the item name under each hotbar cell.",
+            "ShowItemUses": "Show uses / charges",
+            "AutoPopulatePassives": "Auto-populate passives",
+            "TintTokenByHealthHint": "Also tint the tokens on the map: yellow below 75%, orange-red below 50%, dark red below 25%, grey when down, purple when staggered by nonlethal damage. Writes texture.tint and restores it when healed. Off by default.",
+            "ShowCasterLevel": "Show caster level (CL) in item tooltips",
+            "AutoPopulatePassivesHint": "Put permanent buffs and action-less feats on the passive bar under the portrait.",
+            "AutoPopulateEnabledHint": "Fill the hotbar from the actor's items when a token is created.",
+            "ShowCasterLevelHint": "When hovering an item, show its caster level (system.cl) at the right of the tooltip header. Works for any item that has a CL: scrolls, potions, wands, weapons, armor. Off by default.",
+            "DamageOverlayHint": "Red rises from the bottom of the portrait as you take damage; hidden at full health.",
+            "ConfigureAutoPopulateGrids": "Auto-Populate",
+            "ShowItemUsesHint": "Display remaining uses for potions, wands and daily abilities.",
+            "IgnoreGroupActorsHint": "Do not show the HUD for party/group actors.",
+            "ConfigureGridsHint": "Choose which item types land in grid 0 / 1 / 2.",
+            "DamageOverlay": "Red damage overlay on portrait",
+            "TintTokenByHealth": "Tint map tokens by health",
+            "ShowHealthOverlay": "Health bar on portrait",
+            "AutoPopulateConfiguration": "Auto-populate grid configuration",
+            "ConfigureGrids": "Configure grids",
+            "AutoPopulatePCs": "Auto-populate player characters too",
+            "AutoPopulateEnabled": "Auto-populate hotbar",
+            "ShowSpellInfo": "Show spell level and save DC on consumables",
+            "ShowSpellInfoHint": "When hovering a scroll, potion or wand, show 'level N' and 'DC N' badges next to the item name. Reads the action's save.dc formula; falls back to 10 + level + min casting ability modifier. Enabled by default.",
+            "ShowPassives": "Show passive traits bar",
+            "ShowPassivesHint": "The row of small icons above the portrait (class features, feats, traits, …). Turn it off to hide the whole bar. Re-select the token or reload after changing.",
+            "ShowPassivesOn": "shown",
+            "ShowPassivesOff": "hidden",
+            "PassiveFilter": "Passive traits bar range",
+            "PassiveFilterHint": "\"All traits\" shows every passive; \"Only with uses\" keeps just items that have a Uses pool (daily class abilities, potions, wands…), hiding purely passive feats and always-on buffs.",
+            "PassiveFilterAll": "All traits",
+            "PassiveFilterUsable": "Only with uses"
+        }
+    }
+}

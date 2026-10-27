@@ -1,0 +1,109 @@
+{
+    "bg3-hud-pf1": {
+        "AutoPopulate": {
+            "SettingsTitle": "自动填充格子配置",
+            "Types": {
+                "Consumables": "消耗品",
+                "Loot": "战利品",
+                "OtherAbilities": "其他能力",
+                "Cantrips": "戏法（0 环）",
+                "Traits": "背景特性",
+                "ClassFeatures": "职业特性",
+                "Feats": "专长",
+                "SpellRing": "环",
+                "Equipment": "装备",
+                "Spells": "法术（全部环位）",
+                "Templates": "模板",
+                "Buffs": "增益",
+                "Attacks": "战斗",
+                "RacialTraits": "种族特性",
+                "Weapons": "武器"
+            },
+            "DialogHint": "勾选要用哪些类型的物品来填充这一格。",
+            "DialogTitle": "自动填充本格",
+            "Groups": {
+                "Combat": "战斗",
+                "Magic": "法术",
+                "Features": "角色特性",
+                "Items": "物品"
+            },
+            "Options": {
+                "SkipUnusableHint": "没有使用次数、也没有动作的纯描述物品不填进热键栏。",
+                "SkipUnusable": "跳过不可用的物品"
+            },
+            "SettingsHint": "每一块对应热键栏的一格：点亮类型按钮，就会把该类型分配到那一格。同一个类型只能放在一处。",
+            "NoTypes": "没有可填充的物品类型"
+        },
+        "CellMenu": {
+            "Unequip": "卸下",
+            "Damage": "投伤害",
+            "Prepare": "准备法术",
+            "Use": "使用",
+            "Equip": "装备",
+            "Unprepare": "取消准备",
+            "Attack": "投攻击",
+            "Cast": "施放"
+        },
+        "Notifications": {
+            "NotReady": "HUD 还没准备好，请先进入世界并选中一个 token",
+            "Saved": "自动填充配置已保存",
+            "SaveFailed": "打开自动填充配置失败，详见控制台",
+            "PassivesConfig": "被动特性条：{state} · {mode}（在「配置设置 → 模块设置 → BG3 HUD PF1」里改）"
+        },
+        "Filters": {
+            "Feat": "专长",
+            "Spell": "法术",
+            "Cantrip": "戏法",
+            "Equipment": "装备",
+            "Trait": "背景特性",
+            "RacialTrait": "种族特性",
+            "Consumable": "消耗品",
+            "Ring": "环",
+            "ClassFeature": "职业特性",
+            "Weapon": "武器",
+            "Buff": "增益"
+        },
+        "Rest": {
+            "Hint": "完成一次休息（恢复生命、法术位与每日能力）",
+            "OpenSheet": "角色卡",
+            "OpenSheetHint": "打开 PF1 角色卡",
+            "Label": "休整"
+        },
+        "Settings": {
+            "AutoPopulatePCsHint": "默认关闭（玩家保留自己的排布）。打开后玩家角色也会被自动填。",
+            "ShowItemNames": "热键栏显示物品名",
+            "ShowHealthOverlayHint": "肖像底部的彩色生命条，点击可以加减血。",
+            "IgnoreGroupActors": "忽略队伍（group）角色",
+            "ShowItemNamesHint": "在每个格子下面显示物品名称。",
+            "ShowItemUses": "显示使用次数 / 充能",
+            "AutoPopulatePassives": "自动填充被动能力",
+            "TintTokenByHealthHint": "让地图上的 token 也随血量变色（75% 以下发黄、50% 以下橙红、25% 以下深红、倒地变灰、被瘀伤打晕变紫）。会写进 token 的 texture.tint，回血时还原。默认关。",
+            "ShowCasterLevel": "在物品提示框显示施法者等级（CL）",
+            "AutoPopulatePassivesHint": "把常驻增益、没有动作的专长放进肖像下方的被动条。",
+            "AutoPopulateEnabledHint": "新建 token 时按角色身上的物品自动排好热键栏。",
+            "ShowCasterLevelHint": "鼠标悬停在物品上时，在提示框标题行右侧显示施法者等级（读 system.cl），卷轴/药水/魔杖/武器/护甲等凡是有 CL 的物品都会显示；默认关闭",
+            "DamageOverlayHint": "受伤越多，红色从肖像底部往上涨得越高；满血不显示。",
+            "ConfigureAutoPopulateGrids": "配置自动填充",
+            "ShowItemUsesHint": "药水、魔杖、每日能力显示剩余次数。",
+            "IgnoreGroupActorsHint": "队伍/编组类角色不显示 HUD。",
+            "ConfigureGridsHint": "决定 0/1/2 号格分别自动填入哪些类型的物品。",
+            "DamageOverlay": "肖像按受伤比例泛红",
+            "TintTokenByHealth": "地图上的 token 按血量染色",
+            "ShowHealthOverlay": "肖像上显示血条",
+            "AutoPopulateConfiguration": "自动填充格子配置",
+            "ConfigureGrids": "配置格子内容",
+            "AutoPopulatePCs": "玩家角色也自动填充",
+            "AutoPopulateEnabled": "自动填充热键栏",
+            "ShowSpellInfo": "在消耗品提示框显示环数与豁免 DC",
+            "ShowSpellInfoHint": "鼠标悬停在卷轴/药水/魔杖上时，在提示框标题行右侧显示「X 环」和「DC N」（读 action 的 save.dc 公式，认不出就按 10 + 环数 + 最低施法属性推算）；默认开启",
+            "ShowPassives": "显示被动特性条",
+            "ShowPassivesHint": "肖像上方那排小图标（职业特性、专长、背景等常驻特性）。关掉就整条隐藏。改完重新选中 token 或刷新页面生效。",
+            "ShowPassivesOn": "显示",
+            "ShowPassivesOff": "隐藏",
+            "PassiveFilter": "被动特性条显示范围",
+            "PassiveFilterHint": "「全部特性」= 常驻特性都显示；「只显示带使用次数的」= 只留物品卡上有「使用」次数的（每日职业能力、药水、杖等），纯被动专长和常驻增益不显示。",
+            "PassiveFilterAll": "全部特性",
+            "PassiveFilterUsable": "只显示带「使用」次数的"
+        }
+    }
+}
